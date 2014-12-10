@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="fibApp">
+	<head>
+		<title>Fibonacci</title>
+	</head>
+	<body>
+		<div ng-controller="FibController">
+			<span>Finbonacci Number</span>
+			<input type="text" ng-model="n">
+			<button ng-click='updateFib()'>Get Fib</button>
+			<hr>
+			{{ Fibn }}
+		</div>
+		<script src="http://code.angularjs.org/1.2.0/angular.js"></script>
+		<script src="/fib.js"></script>
+	</body>
+</html>
