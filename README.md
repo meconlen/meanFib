@@ -10,6 +10,10 @@ Run
 
 to install the libraries (express) and run 
 
+	$ bower install
+
+to install the client libs; then 
+
 	$ node server.js
 
 to run the server! 

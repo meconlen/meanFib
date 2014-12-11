@@ -28,6 +28,8 @@ function Fib(n) {
 
 app.use('/', express.static('./public/static'));
 
+app.use('/libs/', express.static('./public/libs'));
+
 app.get('/fib/:l', function(req, res) {
 	var j;
 	var l = req.param("l");
