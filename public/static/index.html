@@ -3,15 +3,69 @@
 	<head>
 		<title>Fibonacci</title>
 		<link href="/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<style type="text/css">
+			body {
+				padding-top: 70px;
+				padding-bottom: 30px;
+			}
+
+			.theme-dropdown .dropdown-menu {
+				position: static;
+				display: block;
+				margin-bottom: 20px;
+			}
+
+			.theme-showcase > p > .btn {
+				margin: 5px 0;
+			}
+
+			.theme-showcase .navbar .container {
+				width: auto;
+			}
+		</style>
+		<link href="/libs/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet">
 	</head>
-	<body>
+	<body role="document">
+
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Fibonacci</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+
 		<div ng-controller="FibController">
-			<span>Fibonacci Number</span>
-			<input type="text" ng-model="n">
-			<button ng-click='updateFib()'>Get Fib</button>
-			<hr>
-			{{ Fibn }}
+			<div class="container" role="main">
+				<div class="jumbotron">		
+					<h1>Fibonacci!</h1>
+					<p>n: 
+						<input type="text" ng-model="n">
+					</p>
+					<a class="btn btn-primary btn-lg" ng-click='updateFib()'>Get Fib(n)</a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					{{ Fibn }}
+				</div>
+			</div>
 		</div>
+
+
 		<script src="/libs/angular/angular.js"></script>
 		<script src="/libs/jquery/dist/jquery.js"></script>
 		<script src="/libs/bootstrap/dist/js/bootstrap.js"></script>
