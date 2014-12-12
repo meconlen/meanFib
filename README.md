@@ -3,12 +3,15 @@
 This is a Fibonacci numbers app implemented in a MEAN stack. 
 The purpose of the app is to take a number n and compute the n'th Fibonacci number. 
 
+The page graphs the Fibonacci numbers using a stockchart (because I wanted to) one
+number per day. You can play around with the stockchart features this way. 
+
 # Install
 Run 
 
 	$ npm install
 
-to install the libraries (express) and run 
+to install the libraries (express)  and run 
 
 	$ bower install
 

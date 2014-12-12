@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "dependencies": {
         "bootstrap": "latest",
-        "angular": "latest"
+        "angular": "latest",
+        "chartjs": "latest",
+        "highcharts-release": "latest",
+        "highstock-release": "latest"
     }
 }
